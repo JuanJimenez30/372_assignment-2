@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -31,11 +27,13 @@ header {
 
 header h1 {
     margin: 0;
+    font-size: 30px;
 }
 
 header p {
     width: 100%;
     text-align: center;
+    flex-basis: 100%;
 }
 
 header nav {
@@ -48,16 +46,6 @@ header nav {
     object-fit: cover;
     border-radius: 40%;
     border: 3px solid white;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 30px;
-}
-
-header p {
-    margin: 0;
-    flex-basis: 100%;
 }
 
 /* navigation */
@@ -87,9 +75,6 @@ nav a {
     font-weight: bold;
     padding: 8px 12px;
     border-radius: 5px;
-}
-
-nav a {
     background-color: #f4b400;
     color: #17365d;
 }
@@ -160,16 +145,11 @@ section h2 {
 /* buttons */
 .button {
     display: inline-block;
-    background-color: #17365d;
-    color: white;
     text-decoration: none;
     padding: 12px 22px;
     border: 2px solid #17365d;
     border-radius: 6px;
     font-weight: bold;
-}
-
-.button {
     background-color: #f4b400;
     color: #17365d;
 }
