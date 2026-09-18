@@ -1,3 +1,12 @@
+/*
+    Name: Juan Jimenez-Mora
+    Date: 09.18.2026
+    CSC 372-01
+
+    This stylesheet controls the layout, appearance, and responsive design
+    for the Gifted University Campus Event Guide.
+*/
+
 body {
     margin: 0;
     padding: 0;
@@ -70,7 +79,6 @@ nav li {
 }
 
 nav a {
-    color: white;
     text-decoration: none;
     font-weight: bold;
     padding: 8px 12px;
@@ -173,6 +181,15 @@ section h2 {
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
+}
+
+.event-card:nth-child(1),
+.event-card:nth-child(2) {
+    grid-column: span 2;
+}
+
+.event-card:nth-child(n+3) {
+    grid-column: span 1;
 }
 
 .event-card figure {
@@ -341,188 +358,188 @@ Small Screens
 }
 
 /* events details page */
-.event-introduction{
-    text-align:center;
+.event-introduction {
+    text-align: center;
 }
 
-.event-introduction h2{
-    font-size:40px;
-    margin-bottom:25px;
+.event-introduction h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
 }
 
-.event-introduction figure{
-    margin:0 auto 25px;
-    max-width:900px;
+.event-introduction figure {
+    margin: 0 auto 25px;
+    max-width: 900px;
 }
 
-.event-introduction figure img{
-    width:100%;
-    max-height:500px;
-    object-fit:cover;
-    border:5px solid #17365d;
-    border-radius:10px;
+.event-introduction figure img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border: 5px solid #17365d;
+    border-radius: 10px;
 }
 
-.event-introduction figcaption{
-    margin-top:8px;
-    font-size:14px;
-    font-style:italic;
+.event-introduction figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    font-style: italic;
 }
 
-.event-introduction p{
-    max-width:900px;
-    margin:15px auto;
+.event-introduction p {
+    max-width: 900px;
+    margin: 15px auto;
 }
 
 /* main content with sidebar */
-.event-layout{
-    display:grid;
-    grid-template-columns:2fr 1fr;
-    gap:35px;
-    align-items:start;
+.event-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 35px;
+    align-items: start;
 }
 
-.event-main-content{
-    background-color:white;
-    padding:30px;
-    border:1px solid #d3d8df;
-    border-radius:10px;
+.event-main-content {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #d3d8df;
+    border-radius: 10px;
 }
 
-.event-main-content h2{
-    font-size:25px;
-    margin-top:0px;
+.event-main-content h2 {
+    font-size: 25px;
+    margin-top: 0px;
 }
 
-.event-main-content ul{
-    padding-left:25px;
+.event-main-content ul {
+    padding-left: 25px;
 }
 
-.event-main-content li{
-    margin-bottom:10px;
+.event-main-content li {
+    margin-bottom: 10px;
 }
 
 /* schedule */
-.schedule{
-    list-style:none;
-    padding-left:0;
+.schedule {
+    list-style: none;
+    padding-left: 0;
 }
 
-.schedule li{
-    padding:12px;
-    margin-bottom:8px;
-    background-color:#f5f7fa;
-    border-left:4px solid #f4b400;
+.schedule li {
+    padding: 12px;
+    margin-bottom: 8px;
+    background-color: #f5f7fa;
+    border-left: 4px solid #f4b400;
 }
 
-.schedule time{
-    font-weight:bold;
-    color:#17365d;
+.schedule time {
+    font-weight: bold;
+    color: #17365d;
 }
 
 /* sidebar */
-.event-sidebar{
-    background-color:#17365d;
-    color:white;
-    padding:25px;
-    border:3px solid #f4b400;
-    border-radius:10px;
-    position:sticky;
-    top:20px;
+.event-sidebar {
+    background-color: #17365d;
+    color: white;
+    padding: 25px;
+    border: 3px solid #f4b400;
+    border-radius: 10px;
+    position: sticky;
+    top: 20px;
 }
 
-.event-sidebar h2{
-    color:white;
-    border-bottom:2px solid #f4b400;
-    padding-bottom:10px;
-    margin-top:0;
+.event-sidebar h2 {
+    color: white;
+    border-bottom: 2px solid #f4b400;
+    padding-bottom: 10px;
+    margin-top: 0;
 }
 
-.event-info{
-    margin-bottom:25px;
+.event-info {
+    margin-bottom: 25px;
 }
 
-.event-info p{
-    border-bottom:1px solid rgba(255,255,255,0.3);
-    padding-bottom:12px;
-    margin-bottom:15px;
+.event-info p {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 12px;
+    margin-bottom: 15px;
 }
 
-.event-info strong{
-    color:#f4b400;
+.event-info strong {
+    color: #f4b400;
 }
 
-.event-sidebar .button{
-    display:block;
-    text-align:center;
+.event-sidebar .button {
+    display: block;
+    text-align: center;
     background-color: #f4b400;
-    color:#17365d;
-    border-color:#f4b400;
+    color: #17365d;
+    border-color: #f4b400;
 }
 
 /* related events */
-.related-events{
-    margin-top:60px;
+.related-events {
+    margin-top: 60px;
 }
 
-.related-event-container{
-    display:flex;
-    justify-content:space-between;
-    align-items:stretch;
+.related-event-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
     gap: 25px;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
-.related-card{
-    flex:1 1 250px;
-    background-color:white;
-    padding:20px;
-    border:1px solid #d3d8df;
-    border-radius:10px;
+.related-card {
+    flex: 1 1 250px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #d3d8df;
+    border-radius: 10px;
 
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
 }
 
-.related-card h3{
-    color:#17365d;
-    margin-top:0;
+.related-card h3 {
+    color: #17365d;
+    margin-top: 0;
 }
 
-.related-card .category{
-    color:#17365d;
-    font-size:13px;
-    font-weight:bold;
-    text-transform:uppercase;
-    letter-spacing:1px;
+.related-card .category {
+    color: #17365d;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.related-card time{
-    font-size:14px;
-    margin-bottom:15px;
+.related-card time {
+    font-size: 14px;
+    margin-bottom: 15px;
 }
 
-.related-card a{
-    margin-top:auto;
-    color:#17365d;
-    font-weight:bold;
+.related-card a {
+    margin-top: auto;
+    color: #17365d;
+    font-weight: bold;
 }
 
 /* medium screens */
 
 @media (max-width: 900px) {
 
-.event-layout {
-    grid-template-columns: 1fr;
-}
+    .event-layout {
+        grid-template-columns: 1fr;
+    }
 
-.event-sidebar {
-    position: static;
-}
+    .event-sidebar {
+        position: static;
+    }
 
-.event-introduction h2 {
-    font-size: 34px;
-}
+    .event-introduction h2 {
+        font-size: 34px;
+    }
 
 }
 
@@ -532,28 +549,28 @@ Event Page Small Screens
 
 @media (max-width: 600px) {
 
-.event-introduction h2 {
-    font-size: 28px;
-}
+    .event-introduction h2 {
+        font-size: 28px;
+    }
 
-.event-introduction figure img {
-    max-height: 300px;
-}
+    .event-introduction figure img {
+        max-height: 300px;
+    }
 
-.event-main-content {
-    padding: 20px;
-}
+    .event-main-content {
+        padding: 20px;
+    }
 
-.event-sidebar {
-    padding: 20px;
-}
+    .event-sidebar {
+        padding: 20px;
+    }
 
-.related-event-container {
-    flex-direction: column;
-}
+    .related-event-container {
+        flex-direction: column;
+    }
 
-.related-card {
-    flex-basis: 100%;
-}
+    .related-card {
+        flex-basis: 100%;
+    }
 
 }
