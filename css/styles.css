@@ -574,3 +574,61 @@ Event Page Small Screens
     }
 
 }
+
+/* saved events */
+#saved-events {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #d3d8df;
+    border-radius: 10px;
+}
+
+#saved-events h2 {
+    margin-top: 0;
+}
+
+#saved-events-list {
+    padding-left: 25px;
+}
+
+.saved-event-item {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-left: 4px solid #f4b400;
+    background-color: #f5f7fa;
+}
+
+.saved-event-item strong {
+    display: block;
+    color: #17365d;
+}
+
+.saved-event-item span {
+    display: block;
+    margin-top: 4px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* saved event card */
+.event-card.saved-event {
+    border: 3px solid #f4b400;
+    background-color: #fff9e6;
+}
+
+.save-event-button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: 2px solid #17365d;
+    border-radius: 6px;
+    background-color: #f4b400;
+    color: #17365d;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.save-event-button:hover {
+    opacity: 0.85;
+}
